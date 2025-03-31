@@ -3,28 +3,28 @@ kind: ClusterConfig
 
 metadata:
   # Replace with your EKS Cluster's name
-  name: workday-test-muhammad
+  name: my-eks-cluster
   # Replace with the AWS Region your cluster is deployed in
   region: us-east-2
 
 vpc:
-  id: "vpc-9c8480f4"
-  securityGroup: "sg-07bbf578b33f95014"    # this is the ControlPlaneSecurityGroup
+  id: "vpc-XXXXX"
+  securityGroup: "sg-XXXXX"    # this is the ControlPlaneSecurityGroup
   subnets:
     private:
       private1:
-          id: "subnet-000b760964b4628d5"
+          id: "subnet-XXXXX"
       private2:
-          id: "subnet-05ad069322b7e18be"
+          id: "subnet-XXXXXX"
       private3:
-          id: "subnet-0482b4696f6b58992"
+          id: "subnet-XXXXXX"
     public:
       public1:
-          id: "subnet-000b760964b4628d5"
+          id: "subnet-XXXXXX"
       public2:
-          id: "subnet-05ad069322b7e18be"
+          id: "subnet-XXXXXXX"
       public3:
-          id: "subnet-0482b4696f6b58992"
+          id: "subnet-XXXXXXXXX"
 
 managedNodeGroups:
   # Name to give the managed node-group
