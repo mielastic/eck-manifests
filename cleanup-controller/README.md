@@ -5,4 +5,4 @@ Pods using a Local Persistent Volume are always scheduled to the same Node as th
 The local volume node cleanup controller removes PersistentVolumes and PersistentVolumeClaims that reference deleted Nodes.
 
 ## Usage
-Please see the example deployment and rbac for deploying the controller.
+Please see the example [deployment](https://github.com/kubernetes-sigs/sig-storage-local-static-provisioner/blob/master/deployment/kubernetes/example/node-cleanup-controller/deployment.yaml) and [rbac](https://github.com/kubernetes-sigs/sig-storage-local-static-provisioner/blob/master/deployment/kubernetes/example/node-cleanup-controller/rbac.yaml) for deploying the controller.
